@@ -181,11 +181,13 @@ export async function getStaticProps({ ...ctx }) {
   return {
     props: {
       siteTitle: config.title,
-      frontmatter: data.data,
+      frontmatter: JSON.parse(JSON.stringify(data.data)),
       markdownBody: data.content,
     },
   }
 }
+
+//data.data
 
 export async function getStaticPaths() {
   //get all .md files in the posts dir
