@@ -9,7 +9,6 @@ sections:
 - type: document
   path: Document1
   label: Document1
-  match: "**/*"
 - type: directory
   path: DirectoryOne
   label: DirectoryOne
